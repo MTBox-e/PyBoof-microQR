@@ -840,7 +840,7 @@ class QrCodeGenerator:
 
         :param mask: 0b000, 0b001, 0b010, 0b011, 0b100, 0b101, 0b110, 0b111
         """
-        self.java_encoder.setMask(string_to_qrcode_error(mask))
+        self.java_encoder.setMask(int_to_microqr_mask(mask))
 
     def set_message(self, message):
         self.java_encoder.addAutomatic(str(message))
