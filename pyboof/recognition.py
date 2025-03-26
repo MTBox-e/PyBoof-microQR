@@ -801,13 +801,13 @@ def string_to_microqr_error(error):
 
 def int_to_microqr_mask(mask):
     if mask == 0b00:
-        return pbg.gateway.jvm.boofcv.alg.fiducial.microqr.MicroQrCodeMaskPattern.M000
+        return pbg.gateway.jvm.boofcv.alg.fiducial.microqr.MicroQrCodeMaskPattern.M00
     elif mask == 0b01:
-        return pbg.gateway.jvm.boofcv.alg.fiducial.microqr.MicroQrCodeMaskPattern.M001
+        return pbg.gateway.jvm.boofcv.alg.fiducial.microqr.MicroQrCodeMaskPattern.M01
     elif mask == 0b10:
-        return pbg.gateway.jvm.boofcv.alg.fiducial.microqr.MicroQrCodeMaskPattern.M010
+        return pbg.gateway.jvm.boofcv.alg.fiducial.microqr.MicroQrCodeMaskPattern.M10
     elif mask == 0b11:
-        return pbg.gateway.jvm.boofcv.alg.fiducial.microqr.MicroQrCodeMaskPattern.M011
+        return pbg.gateway.jvm.boofcv.alg.fiducial.microqr.MicroQrCodeMaskPattern.M11
     else:
         return None
 
